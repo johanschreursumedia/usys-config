@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# nuke license server (the variable uses this oddy naming convention, keep it like that)
+#export foundry_LICENSE="USE_SERVER=4101@0.0.0.0"
+
+# eddy (plugin for nuke)
+#export VORTECHS_LICENSE_PATH="6200@0.0.0.0"
+
+# bokeh (plugin for nuke)
+#export peregrinel_LICENSE="4313@0.0.0.0"
+
+# optical flares (plugin for nuke)
+#export OPTICAL_FLARES_LICENSE_SERVER_IP="0.0.0.0"
+
+# mocha pro license server
+#export ISL_LICENSE_FILE="27000@0.0.0.0"
+
+# silhouette
+#export SFX_LICENSE_SERVER="4313@0.0.0.0"
+
+# maya / mudbox
+#export ADSKFLEX_LICENSE_FILE="@0.0.0.0"
+#export MAYA2018_AUTODESK_ADLM_THINCLIENT_ENV="$( locres apps/maya/2018 )/AdlmThinClientCustomEnv.xml"
+#export MUDBOX2018_AUTODESK_ADLM_THINCLIENT_ENV="$( locres apps/mudbox/2018 )/AdlmThinClientCustomEnv.xml"

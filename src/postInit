@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# This script is sourced automatically by ubash after the initialization usys.
+
+# getting current script folder
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# scripts that are going to define new environments
+for executable in $dir/env/* ; do
+  # making sure it's an executable
+  if [[ -f "$executable" &&  -x "$executable" ]]; then
+    source $executable
+  fi
+done
