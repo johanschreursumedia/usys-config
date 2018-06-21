@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# user used for publishing versions (optional) in the ingestor
-#export VERSION_PUBLISHER_USER="upub"

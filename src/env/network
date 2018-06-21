@@ -2,7 +2,3 @@
 
 # ntp server used to sync the time accross all computers (optional)
 #export NTP_SERVER="0.0.0.0"
-
-# folder used to tell the location for temporary files that are
-# shared across the network
-export TEMP_REMOTE_DIR="$UPIPE_ROOT/temp"
