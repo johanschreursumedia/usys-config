@@ -4,7 +4,7 @@
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # shotgun address
-#export SHOTGUN_URL="https://..."
+#export USHOTGUN_URL="https://..."
 
 # session configuration used by ushotgun
 export USHOTGUN_SESSION_CONFIG_PATH="$dir/data/ushotgunSession"
