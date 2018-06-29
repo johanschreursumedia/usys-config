@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# directory used to tell the location for temporary files that are
+# shared across the network
+export CENTIPEDE_TEMP_REMOTE_DIR="$UPIPE_ROOT/temp"
+
+# user used for publishing versions (optional) in the centipede
+#export CENTIPEDE_VERSION_PUBLISHER_USER="upub"
+
+# Environments related with the renderfarm dispatcher.
+# currently these environments are very much
+# deadline centric. However, these names may
+# change when we introduce a new renderfarm manager.
+export CENTIPEDE_DISPATCHER_RENDERFARM_PRIORITY="50"
+export CENTIPEDE_DISPATCHER_RENDERFARM_SPLITSIZE="5"
+export CENTIPEDE_DISPATCHER_RENDERFARM_GROUP="farm"
+export CENTIPEDE_DISPATCHER_RENDERFARM_POOL=""
+export CENTIPEDE_DISPATCHER_RENDERFARM_SECONDARYPOOL=""
+
+# application defaults. The default for the applications is defined by
+# the convention CENTIPEDE_DISPATCHER_RENDERFARM_<APPLICATION>_<OPTION>.
+
+# maya defaults
+export CENTIPEDE_DISPATCHER_RENDERFARM_MAYA_GROUP="$CENTIPEDE_DISPATCHER_RENDERFARM_GROUP"
+export CENTIPEDE_DISPATCHER_RENDERFARM_MAYA_POOL="cg"
+
+# nuke defaults
+export CENTIPEDE_DISPATCHER_RENDERFARM_NUKE_GROUP="$CENTIPEDE_DISPATCHER_RENDERFARM_GROUP"
+export CENTIPEDE_DISPATCHER_RENDERFARM_NUKE_POOL="comp"
